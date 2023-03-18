@@ -1,6 +1,6 @@
 import "./DropdownList.css";
 
-export const DropdownList = (props) => {
+const DropdownList = (props) => {
   const changeFunc = (event) => {
     props.onAltered(event.target.value);
   };
@@ -23,3 +23,5 @@ export const DropdownList = (props) => {
     </div>
   );
 };
+
+export default DropdownList;

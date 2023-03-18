@@ -1,10 +1,11 @@
 import "./Form.css";
-import { DropdownList } from "../DropdownList/DropdownList";
-import TextField from "../TextField";
-import { Button } from "../Button/Button";
+import TextField from "../TextField/TextField";
+import Button from "../Button/Button";
+import DropdownList from "../DropdownList/DropdownList";
 import { useState } from "react";
 
-export const Form = () => {
+
+const Form = () => {
   const [name, setName] = useState("");
   const [cargo, setCargo] = useState("");
   const [image, setImage] = useState("");
@@ -63,3 +64,5 @@ export const Form = () => {
     </section>
   );
 };
+
+export default Form;

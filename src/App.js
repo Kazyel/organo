@@ -1,5 +1,5 @@
-import Banner from "./components/Banner";
-import { Form } from "./components/Form/Form";
+import Banner from './components/Banner/Banner'
+import Form from './components/Form/Form';
 
 const App = () => {
   return (
