@@ -1,0 +1,21 @@
+.section-form {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0;
+  color: #efefef;
+  
+}
+
+.section-form form {
+  max-width: 80%;
+  background-color: #222222;
+  border-radius: 15px;
+  padding: 2rem 2rem;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-form h2 {
+  text-transform: uppercase;
+  padding: 0.35em;
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.35);
+}
