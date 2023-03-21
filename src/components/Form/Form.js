@@ -4,23 +4,24 @@ import Button from "../Button/Button";
 import DropdownList from "../DropdownList/DropdownList";
 import { useState } from "react";
 
-
-const Form = () => {
+const Form = (props) => {
   const [name, setName] = useState("");
   const [cargo, setCargo] = useState("");
   const [image, setImage] = useState("");
   const [team, setTeam] = useState("");
 
-  const times = [
-    "Valorant",
-    "League of Legends",
-    "Counter Strike: Global Offensive",
-    "Rocket League",
-  ];
-
   const onSave = (e) => {
     e.preventDefault();
-    console.log("Form foi submetido =>", name, cargo, image, team);
+    props.aoColaboradorCadastrado({
+      name,
+      cargo,
+      image,
+      team,
+    });
+    setName('')
+    setCargo('')
+    setImage('')
+    setTeam('')
   };
 
   return (
@@ -51,7 +52,7 @@ const Form = () => {
         />
 
         <DropdownList
-          items={times}
+          items={props.times}
           label="Times"
           placeholder="Selecione o seu time..."
           required={true}
