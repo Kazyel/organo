@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Form = (props) => {
   const [name, setName] = useState("");
-  const [cargo, setCargo] = useState("");
+  const [funcao, setFuncao] = useState("");
   const [image, setImage] = useState("");
   const [team, setTeam] = useState("");
 
@@ -14,12 +14,12 @@ const Form = (props) => {
     e.preventDefault();
     props.aoColaboradorCadastrado({
       name,
-      cargo,
+      funcao,
       image,
       team,
     });
     setName('')
-    setCargo('')
+    setFuncao('')
     setImage('')
     setTeam('')
   };
@@ -31,22 +31,22 @@ const Form = (props) => {
         <TextField
           required={true}
           label="Nome"
-          placeholder="nome"
+          placeholder="Digite seu nome..."
           value={name}
           onAltered={(value) => setName(value)}
         />
 
         <TextField
           required={true}
-          label="Cargo"
-          placeholder="cargo"
-          value={cargo}
-          onAltered={(value) => setCargo(value)}
+          label="Função"
+          placeholder="Digite sua função..."
+          value={funcao}
+          onAltered={(value) => setFuncao(value)}
         />
 
         <TextField
           label="Imagem"
-          placeholder="endereço de imagem"
+          placeholder="Digite seu endereço de imagem..."
           value={image}
           onAltered={(value) => setImage(value)}
         />

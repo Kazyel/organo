@@ -1,7 +1,7 @@
 import "./TextField.css";
 
 export const TextField = (props) => {
-  const placeholder = `Digite seu ${props.placeholder}...`;
+  const placeholder = props.placeholder;
 
   const changeFunc = (event) => {
     props.onAltered(event.target.value);

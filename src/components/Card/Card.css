@@ -10,7 +10,9 @@
     border-radius: 10px 10px 0px 0px;
 }
 .card img {
-    width: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
     position: relative;
     bottom: -50px;

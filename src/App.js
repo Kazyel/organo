@@ -16,7 +16,7 @@ const App = () => {
       corSecundaria: "#E8F8FF",
     },
     {
-      nome: "Counter Strike: Global Offensive",
+      nome: "Counter Strike: Global Offen sive",
       corPrimaria: "#A6D157",
       corSecundaria: "#F0F8E2",
     },
@@ -27,8 +27,10 @@ const App = () => {
     },
   ];
 
+  //Setar novo player
   const [colaboradores, setColaborador] = useState([]);
 
+  //Criar novo Player
   const novoColaborador = (colaborador) => {
     setColaborador([...colaboradores, colaborador]);
   };
