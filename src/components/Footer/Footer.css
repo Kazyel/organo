@@ -1,0 +1,28 @@
+.footer {
+    background: url(../../../public/assets/imagens/fundo.png);
+    background-color: #6278f7;
+    background-size: contain;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.imagens {
+    cursor: pointer;
+}
+
+.imagens img {
+    padding: 1rem;
+    transition: all 200ms ease;
+}
+
+.imagens img:hover {
+    filter: drop-shadow(0 0 0.75rem #9FF5D4);
+}
+
+.footer p {
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}

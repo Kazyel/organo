@@ -1,6 +1,7 @@
 import Banner from "./components/Banner/Banner";
 import Form from "./components/Form/Form";
 import Team from "./components/Team/Team";
+import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 const App = () => {
@@ -55,6 +56,7 @@ const App = () => {
           )}
         />
       ))}
+      <Footer />
     </div>
   );
 };
